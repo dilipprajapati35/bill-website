@@ -2,10 +2,10 @@ import React from "react";
 
 const PrivacyPolicyPage: React.FC = () => {
   return (
-    <div className="bg-white py-16 md:py-24">
+    <div role="main" aria-labelledby="privacy-heading" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="prose lg:prose-xl max-w-4xl mx-auto">
-          <h1 className="text-primary">Privacy Policy</h1>
+          <h1 id="privacy-heading" className="text-primary">Privacy Policy</h1>
           <p className="lead">
             Your privacy is important to us. It is GR Billing's policy to
             respect your privacy regarding any information we may collect from
@@ -130,11 +130,14 @@ const PrivacyPolicyPage: React.FC = () => {
             data from the GR Billing App, please contact us at:
           </p>
           <p>
-            📩{" "}
-            <a href="mailto:ayushii.jain7459@gmail.com">
+            Please contact us at{' '}
+            <a
+              href="mailto:ayushii.jain7459@gmail.com"
+              className="text-primary hover:underline"
+            >
               ayushii.jain7459@gmail.com
             </a>
-            <br />
+            .
           </p>
           <p>Include the following:</p>
           <ul>
@@ -143,7 +146,7 @@ const PrivacyPolicyPage: React.FC = () => {
           </ul>
           <p>
             After receiving your request, we will delete your account and
-            associated data from our database within 7 working days. We do not
+            associated data from our database within 7 business days. We do not
             currently offer in-app account deletion. All deletion requests are
             handled manually by our support/development team.
           </p>
@@ -171,7 +174,7 @@ const PrivacyPolicyPage: React.FC = () => {
             .
           </p>
           <p>
-            <small>This policy is effective as of 1st January 2024.</small>
+            <small>This policy is effective as of January 1, 2024.</small>
           </p>
         </div>
       </div>
