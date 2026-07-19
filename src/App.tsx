@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
+import React, { useEffect, useState } from 'react';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
+import Header from './components/Header';
 import AboutPage from './pages/AboutPage';
+import AdminPage from './pages/AdminPage';
 import ContactPage from './pages/Contact';
+import HomePage from './pages/HomePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicy';
 
 const App: React.FC = () => {
@@ -29,6 +30,8 @@ const App: React.FC = () => {
         return <ContactPage />;
       case '#/privacy':
         return <PrivacyPolicyPage />;
+      case '#/admin':
+        return <AdminPage />;
       case '#/':
       default:
         return <HomePage />;
